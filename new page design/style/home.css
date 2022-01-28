@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Satisfy&display=swap');
+/* ===================================================================================================================================
+                                                GENERAL CSS PROPERTIES
+   ===================================================================================================================================
+ */
+
+ /* COLOR CODE */
+ :root{
+     --dark-blue: #1572A1;
+     --light-blue: #9AD0EC;
+     --white: #F7F7F7;
+     --black: #212121;
+     --youtube: #ff0000;
+     --facebook: #1877f2;
+     --google-plus: #ea4335;
+     --instagram:#e1306c;
+     --linkedin: #0a66c2;
+     --twitter: #1da1f2;
+
+ }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--dark-blue);
+}
+
+
+/* ====================================================================================================================
+                    HEADER SECTION STYLING
+======================================================================================================================= */
+header{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding-top: 30px;
+    height: 10vh;
+    font-size: medium;
+    background-color: var(--white);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+/* Logo Styling */
+.logo-wrapper{
+    height: 20%;
+    font-weight: bold;
+}
+
+.logo-wrapper a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-wrapper a:hover{
+        color: var(--light-blue);
+        height: 100%;
+        
+}
+
+
+.logo{
+    height: 80%;
+    border-radius: 50%;
+}
+
+/* Login Button Styling */
+
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18%;
+}
+.login{
+    border-radius: 10px;
+    text-decoration: none;
+    border: 0;
+    background-color: var(--dark-blue);
+    color: white;
+    outline: 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.login:hover{
+    transform: scale(0.98);
+}
+
+
+/* Navbar Styling */
+
+.nav-item{
+    padding-right: 50px;
+}
+
+.nav-link{
+    color: var(--dark-blue);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: var(--light-blue);
+}
+
+.nav-link.active{
+    color: var(--dark-blue);
+    font-size: 25.5px;
+    font-weight: 800px;
+    text-shadow: 0 0 7px var(--light-blue);
+}
+
+/* =================================================================================================================================================
+                                            MAIN BODY SECTION
+====================================================================================================================================================*/
+main{
+    height: 60vh;
+}
+
+/* Social Media Icons Styling */
+.icons{
+    
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.icons a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Oswald',sans-serif;
+    margin: 2px;
+    text-align: left;
+    border-radius: 50px 0px 0px 50px;
+    transform: translate(180px,0px);
+    transition: all 0.5s;
+}
+
+.icons a:hover{
+    transform: translate(0px,0px);
+    text-decoration: none;
+    color: var(--white);
+
+}
+
+.icons a i{
+  margin-right: 25px;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.icons a:hover i{
+    transform: rotate(360deg);
+}
+
+.icons a i.fa-facebook-f{
+    color: var(--facebook);
+}
+
+.icons a i.fa-youtube{
+    color: var(--youtube);
+}
+
+.icons a i.fa-instagram{
+    color: var(--instagram);
+}
+
+.icons a i.fa-linkedin-in{
+    color: var(--linkedin);
+}
+
+.icons a i.fa-google-plus-g{
+    color: var(--google-plus);
+}
+
+.icons a i.fa-twitter{
+    color: var(--twitter);
+}
+
+
+.facebook{
+    background-color: var(--facebook);
+    color: white;
+}
+
+.instagram{
+    background-color: var(--instagram);
+    color: white;
+}
+
+.twitter{
+    background-color: var(--twitter);
+    color: white;
+}
+
+.youtube{
+    background-color: var(--youtube);
+    color: white;
+}
+
+.linkedin{
+    background-color:  var(--linkedin);
+    color: white;
+}
+
+.google{
+    background-color: var(--google-plus);
+    color: white;
+}
+
+
+/* Main Body Styling */
+.logo-container{
+    display: block;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.logo-container img{
+    animation: rotation 2s infinite ;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
+ .logo-caption{
+    text-align: center;
+    color: var(--light-blue);
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 3px;
+    font-size: 25px;
+ }
+
+/* ================================================================================================================
+                        FOOTER SECTION
+===================================================================================================================*/
+footer {
+    background: #16222a;
+    background: -webkit-linear-gradient(59deg, #3a6073, #16222a);
+    background: linear-gradient(59deg, #3a6073, #16222a);
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .footer-content{
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      padding-top: 50px;
+      justify-content: center;
+      margin-left: 10%;
+      font-size: 20px;
+  }
+
+  .footer-content a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+  }
+
+  .footer-content a:hover{
+      text-decoration: underline;
+  }
+
+  /* Copyright Content */
+  .copy {
+    font-size: 16px;
+    padding: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+
+  .copy hr{
+      border: 1px solid white;
+      margin-left: 5%;
+      width: 100%;
+      align-content: center;
+  }
+
